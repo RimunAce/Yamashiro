@@ -1,0 +1,13 @@
+{
+    "name": "Yamashiro",
+    "description": "A Discord Bot developed by Respire#9313",
+    "version": "1.5.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "fs": "^0.0.2",
+        "discord.js": "^11.3.2"
+    }
+}
