@@ -8,6 +8,6 @@ exports.run = async (client,message,args,config,dir) => {
   if(message.channel.type !== "text") return;
   const guildColor = message.guild.me.displayHexColor!=='#000000' ? message.guild.me.displayHexColor : config.eColor
   const userColor = message.member.displayHexColor!=='#000000' ? message.member.displayHexColor : config.eColor
-message.channel.send(`${client.ping}ms`)
+message.channel.send(`${Math.round(client.ping)}ms`)
 
 }
