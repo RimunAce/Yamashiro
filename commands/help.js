@@ -13,4 +13,5 @@ exports.run = async (client,message,args,config,dir) => {
   .setAuthor(`${message.author.tag} Requested Help!`,message.author.avatarURL)
   .setDescription(`\`y.online\` ~Send LegameMC Server Status
 \`y.ping\` ~ Ping Yamashiro!`)
+  message.channel.send(embed)
 }
