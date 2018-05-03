@@ -9,12 +9,14 @@ exports.run = async (client,message,args,config,dir) => {
   if(message.channel.type !== "text") return;
   const guildColor = message.guild.me.displayHexColor!=='#000000' ? message.guild.me.displayHexColor : config.eColor
   const userColor = message.member.displayHexColor!=='#000000' ? message.member.displayHexColor : config.eColor
-  if(!args[0]) return;
-reddit(args[0].toLowerCase).then(url =>{
+  reddit('cleanloli')
+  .then(url => {
     message.channel.send({embed: new Discord.RichEmbed()
-        .setImage(url)
-    
-    })
-})
-
+                          .setAuthor(`This are LEGAL, ${message.author.tag}!`, message.author.avatarURL)
+                          .setImage(url)
+                          .setColor(`${message.guild.me.displayHexColor!=='#000000' ? message.guild.me.displayHexColor : config.eColor}`)
+                          .setTimestamp(new Date())
+                         })
+  })
+  
 }
