@@ -12,6 +12,7 @@ exports.run = async (client,message,args,config,dir) => {
   .setColor(guildColor)
   .setAuthor(`${message.author.tag} Requested Help!`,message.author.avatarURL)
   .setDescription(`\`y.online\` ~Send LegameMC Server Status
-\`y.ping\` ~ Ping Yamashiro!`)
+\`y.ping\` ~ Ping Yamashiro!
+\`y.loli\` ~ Get some random loli`)
   message.channel.send(embed)
 }
